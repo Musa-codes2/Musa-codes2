@@ -1,0 +1,771 @@
+/* Entire page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Nav Bar */
+.navBar {
+    background-color: #1B1F3B;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 90px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #ffffff;
+    margin-right: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #F45D22;
+    transition: width 0.7s ease-in-out;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+/* Home Page */
+#home {
+    margin-top: 25px;
+    width: 100%;
+    height: 780px;
+    background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.homeContent {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 1.3;
+    margin-top: -90px;
+}
+
+#homeText {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+button {
+    display: inline-block;
+    background-color: #F45D22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    margin-top: 25px; 
+}
+
+button a {
+    color: white; 
+    font-size: 18px;
+    text-decoration: none; 
+}
+
+button:hover {
+    background-color: #d94d17;
+    transform: translateY(-2px); 
+}
+
+button a:hover {
+    color: white; 
+}
+
+
+#homeImg {
+    width: 450px;
+    height: 650px;
+    margin: 155px 30px 100px 0;
+    border-radius: 30px;
+}
+
+/* Footer */
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #1B1F3B;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footerContact a {
+    color: #F45D22;
+}
+
+#footerContact a:hover {
+    color: #d94f1e;
+}
+
+/* About Us Page */
+#about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #E5E7EB;
+    padding: 120px 100px;
+    box-sizing: border-box;
+}
+
+#aboutContent {
+    margin-top: 100px;
+    width: 40%;
+}
+
+#aboutContent p {
+    margin-top: 10px;
+}
+
+#aboutImg {
+    width: 600px;
+    height: 400px;
+    margin-top: 60px;
+}
+
+#aboutBox1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutHistory {
+    background-color: #ffffff;
+    padding: 60px 80px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#aboutHistory h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1B1F3B;
+}
+
+#aboutHistory p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+#aboutXphead {
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+#aboutXp {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#aboutPerson1,
+#aboutPerson2,
+#aboutPerson3 {
+    flex: 1 1 300px;
+    max-width: 350px;
+    min-width: 280px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+#joinUsSection {
+    background-color: #ffffff;
+    padding: 60px 80px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+#joinUsSection h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1B1F3B;
+    margin-top: 0; 
+}
+
+#joinUsSection p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* staff page */
+
+#staffPage {
+    background-color: #E5E7EB;
+    padding: 120px 100px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  #staffIntro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+  }
+  
+  #staffIntro h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+  }
+  
+  #staffIntro p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  #staffGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  
+  #staffCard {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #staffCard img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-bottom: 15px;
+  }
+  
+  #staffCard h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #1B1F3B;
+  }
+  
+  #staffCard p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #F45D22;
+  }
+  
+  #staffCard blockquote {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.4;
+  }
+  
+  #staffContact {
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    padding-top: 12px;
+  }
+  
+  #staffContact h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1B1F3B;
+    margin-bottom: 6px;
+  }
+  
+  #staffContact a {
+    display: block;
+    font-size: 14px;
+    color: #F45D22;
+    text-decoration: none;
+    margin-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  
+  #staffContact a:hover {
+    color: #d94f1e;
+    text-decoration: underline;
+  }
+  
+  /* job page*/
+
+  #job {
+    background-color: #E5E7EB;
+    padding: 120px 100px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  #jobsIntro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+  }
+  
+  #jobsIntro h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #1B1F3B;
+  }
+  
+  #jobsIntro p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  #jobGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  #jobCard {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 400px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #jobCard h3 {
+    color: #1B1F3B;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  #jobMeta {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  
+  #jobCard p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #applyBtn {
+    display: inline-block;
+    background-color: #F45D22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #applyBtn:hover {
+    background-color: #d94d17;
+    transform: translateY(-2px);
+  }
+
+  
+  #perks {
+    background-color: #fff;
+    padding: 60px 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 60px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #perks h2 {
+    font-size: 32px;
+    color: #1B1F3B;
+    margin-bottom: 30px;
+  }
+  
+  #perks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #perks ul li {
+    font-size: 18px;
+    color: #333;
+    margin: 12px 0;
+    padding-left: 1.2em;
+    text-align: left;
+    position: relative;
+  }
+  
+  #perks ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #F45D22; /* Orange accent */
+    font-size: 22px;
+    line-height: 1;
+  }
+  
+  /* Course page*/
+
+  #course {
+    background-color: #E5E7EB;
+    padding: 120px 100px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+#coursesSection {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #coursesSection h2 {
+    font-size: 30px;
+    color: #1B1F3B;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #courseGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  
+  #courseCard {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; 
+  }
+  
+  #courseCard h3 {
+    margin-bottom: 10px;
+    color: #1B1F3B;
+  }
+  
+  #courseCard p {
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* application page*/
+
+  #application {
+    background-color: #E5E7EB;
+    padding: 120px 100px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  #jobApplication h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  #applicationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #applicationForm label {
+    font-weight: 500;
+  }
+  
+  #applicationForm input,
+  #applicationForm select,
+  #applicationForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #applicationForm button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #applicationForm button:hover {
+    background-color: #e65c00;
+  }
+  
+
+  /* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .navDiv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #home {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .homeContent {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #homeImg {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+    gap: 20px;
+  }
+
+  #aboutBox1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutContent {
+    width: 90%;
+    text-align: center;
+  }
+
+  #aboutImg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .navDiv {
+    align-items: center;
+  }
+
+  .logo a {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+
+  #homeText {
+    font-size: 14px;
+  }
+
+  button a {
+    font-size: 16px;
+  }
+
+  #staffCard img {
+    width: 100%;
+    height: auto;
+  }
+
+  #courseCard {
+    max-width: 100%;
+  }
+
+  #jobCard {
+    max-width: 100%;
+  }
+
+  #aboutHistory,
+  #joinUsSection,
+  #perks {
+    padding: 30px 20px;
+  }
+
+  #aboutXp {
+    gap: 20px;
+  }
+
+  #application {
+    padding: 60px 20px;
+    margin-top: 30px;
+  }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  #footerContent h2 {
+    font-size: 20px;
+  }
+
+  #footerContact p, #footerContact a {
+    font-size: 14px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li a {
+    margin-right: 0;
+  }
+
+  #applicationForm input,
+  #applicationForm select,
+  #applicationForm textarea {
+    font-size: 14px;
+  }
+}
+
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Responsive Nav Menu */
+@media (max-width: 768px) {
+  .navDiv {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #navLinks {
+    display: none;
+    flex-direction: column;
+    background-color: #1B1F3B;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  #navLinks.active {
+    display: flex;
+  }
+
+  #navLinks li {
+    margin: 10px 0;
+  }
+
+  #navLinks li a {
+    margin: 0;
+    font-size: 18px;
+  }
+}
